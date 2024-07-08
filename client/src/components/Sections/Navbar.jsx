@@ -85,7 +85,7 @@ const Navbar = () => {
           }}
         >
           <img className="nav-brand-logo" src={logo} alt="logo" />
-          <h3 className="nav-brand-title">Animehub</h3>
+          <h3 className="nav-brand-title">Anime Hub</h3>
         </div>
     
         <input
