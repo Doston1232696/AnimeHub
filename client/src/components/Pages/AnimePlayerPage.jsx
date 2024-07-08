@@ -33,7 +33,7 @@ const AnimePlayerPage = () => {
   const epArray = [];
   const [ep, setEp] = useState(null);
   const baseURL = process.env.REACT_APP_CONSUMET_API_URL;
-const animeProvider = process.env.REACT_APP_CONSUMET_PROVIDER;
+  const animeProvider = process.env.REACT_APP_CONSUMET_PROVIDER;
   async function fetchVideoById(url) {
     return await axios.get(url).then(({ data }) => {
 
@@ -152,11 +152,7 @@ const animeProvider = process.env.REACT_APP_CONSUMET_PROVIDER;
               <div className="sharewatchlistcontainer">
                 <div>
                   <RWebShare
-                    data={{
-                      text: `Watch ${anime.title.english} on Animehub`,
-                      url: `https://animehub.vercel.app/watch/${id}`,
-                      title: anime.title.english,
-                    }}
+                   
                   >
                     <div className="share">
                       <svg
